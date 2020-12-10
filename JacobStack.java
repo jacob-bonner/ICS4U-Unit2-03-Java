@@ -24,7 +24,7 @@ public class JacobStack {
    */
   public Integer pop() throws Exception {
     if (this.stackAsArray.size() <= 0) {
-      throw new Exception();
+      throw null;
     } else {
       int poppedNumber = this.stackAsArray.get(stackAsArray.size() - 1);
       stackAsArray.remove(stackAsArray.size() - 1);

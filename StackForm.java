@@ -43,9 +43,12 @@ public class StackForm {
       // Printing the current values in the stack
       System.out.println(stack.currentStack());
 
-      // Catches and tells the user that an improper input was entered
+      // Catches and tells the user what error occured
+    } catch (NullPointerException e) {
+      System.out.println("");
+      System.out.println("ERROR: Null Received");
     } catch (Exception e) {
-      System.out.println();
+      System.out.println("");
       System.out.println("ERROR: Invalid Input");
     }
   }
